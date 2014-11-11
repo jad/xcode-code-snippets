@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>nibimp</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@implementation &lt;#Class Name#&gt; (GeneralHelpers)
+
++ (instancetype)instanceFromNib
+{
+    UINib *nib = [UINib nibWithNibName:NSStringFromClass(self) bundle:nil];
+    return [[nib instantiateWithOwner:self options:nil] firstObject];
+}
+
+@end
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A2945FE9-8B67-4CCB-B872-5757F0443957</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Stub to create an instance of an object froma nib.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Instance from Nib Implementation</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
